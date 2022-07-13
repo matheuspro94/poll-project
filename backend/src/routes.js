@@ -2,7 +2,7 @@ const express = require('express')
 
 const routes = express.Router()
 
-routes.get('/', (req, res) => {
+routes.get('/poll', (req, res) => {
   res.json({ message: 'Hello World' })
 })
 
