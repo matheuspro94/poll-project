@@ -14,20 +14,20 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      start: {
+      dateStart: {
         type: Sequelize.DATE,
         allowNull: false
       },
-      finish: {
+      dateFinish: {
         type: Sequelize.DATE,
+        allowNull: false
+      },
+      OptionId: {
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       options: {
         type: Sequelize.ARRAY(Sequelize.STRING),
-        allowNull: false
-      },
-      options_id: {
-        type: Sequelize.INTEGER,
         allowNull: false
       },
       created_at: {
